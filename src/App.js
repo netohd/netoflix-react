@@ -1,10 +1,15 @@
 import React from 'react';
-import Menu from './components/Menu';
+import Header from './components/Header';
+import Logo from './components/Logo';
+import Button from './components/Button';
 
 function App() {
   return (
     <div>
-      <Menu/>  
+      <Header>
+        <Logo/>
+        <Button>Novo vídeo</Button>
+        </Header> 
     </div>
   );
 }
