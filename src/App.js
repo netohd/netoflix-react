@@ -6,11 +6,12 @@ import Footer from './components/Footer';
 import Highlight from './components/Highlight';
 import Link from './components/Link';
 import Tag from './components/Tag';
-import Banner from './components/Banner';
+import { Banner, Text } from './components/Banner';
 import Title from './components/Title';
 import Description from './components/Description';
-import Thumb from './components/Thumb';
+import ThumbVideo from './components/Thumb';
 import thumbimg from './assets/img/thumb-img.png'
+import channelimg from './assets/img/channel-img.png'
 
 function App() {
   return (
@@ -23,12 +24,20 @@ function App() {
       </Header>
 
       <Banner>
+        <Text>
         <Tag>FrontEnd</Tag>
         <Title>As Skills de um Desenvolvedor Front-End</Title>
         <Description>Vídeo com algumas das tecnologias que atualmente 
           são consideradas importantes para quem quer entrar no 
           mercado do Desenvolvimento Front-End.</Description>
-        <Thumb src={thumbimg} alt="Thumb do vídeo sobre front"></Thumb>
+        </Text>
+        <ThumbVideo 
+          src={thumbimg} 
+          alt="Thumb do vídeo sobre front"
+          avatar={channelimg}
+          channelName="Código Fonte TV"
+          >
+        </ThumbVideo>
       </Banner>
 
       <Footer>

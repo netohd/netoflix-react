@@ -1,9 +1,13 @@
-import styled from 'styled-components';
+import React from 'react';
+import { WrapperThumb, Thumb, Avatar } from './styles';
 
-const Thumb = styled.img`
-    border-radius: 4px;
-    border: 4rem solid var(--color-frontend);
-    width: 640px;
-`;
+function ThumbVideo({ src, alt, avatar, channelName }) {
+    return (
+        <WrapperThumb>
+            <Thumb src={src} alt={alt} />
+            <Avatar src={avatar} alt={channelName} />
+        </WrapperThumb>
+    );
+}
 
-export default Thumb;
+export default ThumbVideo;
