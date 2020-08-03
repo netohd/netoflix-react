@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import container from '../../tools/container';
 
 const Banner = styled.section`
-    background-color: var(--color-black);
+    ${container};
 `;
 
 export default Banner;

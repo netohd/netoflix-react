@@ -1,18 +1,26 @@
 import styled from 'styled-components';
 import Button from '../Button';
 import Logo from '../Logo';
+import container from '../../tools/container';
 
-const Header = styled.header`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+export const Header = styled.header`
     padding: 20rem 30rem;
     background-color: var(--color-black);
     border-bottom: 4px solid var(--color-primary);
 
     @media(max-width: 800px){
-        justify-content: center;
         padding: 15px 16px;
+    }
+`;
+
+export const Wrapper = styled.header`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ${container};
+
+    @media(max-width: 800px){
+        justify-content: center;
 
         & > ${Logo} {
             height: 35px;
@@ -29,5 +37,3 @@ const Header = styled.header`
         }
     }
  `;
-
-export default Header
