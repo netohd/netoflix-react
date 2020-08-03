@@ -26,7 +26,7 @@ function App() {
       <Banner>
         <Text>
         <Tag>FrontEnd</Tag>
-        <Title>As Skills de um Desenvolvedor Front-End</Title>
+        <Title>As Skills de um Dev Front-End</Title>
         <Description>Vídeo com algumas das tecnologias que atualmente 
           são consideradas importantes para quem quer entrar no 
           mercado do Desenvolvimento Front-End.</Description>
