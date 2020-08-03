@@ -2,4 +2,8 @@
     --color-black: #000;
     --color-primary: rgb(255, 145, 0);
     --color-gray-light: #f5f5f5;
+
+    --color-frontend: #7c2121;
+    --color-ux: #2c5e10;
+    --color-design: #d6ca1a;
 }
